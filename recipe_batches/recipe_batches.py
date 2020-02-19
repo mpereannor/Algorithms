@@ -4,6 +4,38 @@ import math
 
 def recipe_batches(recipe, ingredients):
   pass 
+#recipe == object/dict  #amount needed
+##ingredient == object/dict #amount available
+
+#combination of recipes with ingredients
+
+#loop through obj/dict 
+
+
+#base case
+if dict.keys[i] > dict.keys[j]
+return 0 
+
+else: 
+  recipes.keys[i] < ingredients.keys[j]:
+    
+recipes = { 
+           butter: 5
+           }
+
+ing = { 
+       butter: 20
+        }
+
+
+
+
+
+
+
+
+
+
 
 
 if __name__ == '__main__':
