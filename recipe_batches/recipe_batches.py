@@ -2,30 +2,31 @@
 
 import math
 
+"""
 def recipe_batches(recipe, ingredients):
-  pass 
-#recipe == object/dict  #amount needed
-##ingredient == object/dict #amount available
+  
+  max_combo = 0
+  for ingredient in recipe.keys():
+    if recipe[ingredient] > ingredients[ingredient]:
+      return 0
+    elif ingredients[ingredient] // recipe[ingredient] <= 0:
+      max_combo = ingredients[ingredient] // recipe[ingredient]
+  
+  return max_combo
+"""
 
-#combination of recipes with ingredients
-
-#loop through obj/dict 
-
-
-#base case
-if dict.keys[i] > dict.keys[j]
-return 0 
-
-else: 
-  recipes.keys[i] < ingredients.keys[j]:
-    
-recipes = { 
-           butter: 5
-           }
-
-ing = { 
-       butter: 20
-        }
+def recipe_batches(recipe, ingredients):
+  max_combo = []
+  if len(recipe) > len(ingredients):
+    return 0 
+  for  key in recipe:
+    if key not in ingredients:
+      return 0 
+    else:
+      max_combo.append(ingredients[key] // recipe[key])
+  return min(max_combo)
+      
+  
 
 
 
