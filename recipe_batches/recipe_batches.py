@@ -2,8 +2,41 @@
 
 import math
 
+"""
 def recipe_batches(recipe, ingredients):
-  pass 
+  
+  max_combo = 0
+  for ingredient in recipe.keys():
+    if recipe[ingredient] > ingredients[ingredient]:
+      return 0
+    elif ingredients[ingredient] // recipe[ingredient] <= 0:
+      max_combo = ingredients[ingredient] // recipe[ingredient]
+  
+  return max_combo
+"""
+
+def recipe_batches(recipe, ingredients):
+  max_combo = []
+  if len(recipe) > len(ingredients):
+    return 0 
+  for  key in recipe:
+    if key not in ingredients:
+      return 0 
+    else:
+      max_combo.append(ingredients[key] // recipe[key])
+  return min(max_combo)
+      
+  
+
+
+
+
+
+
+
+
+
+
 
 
 if __name__ == '__main__':
